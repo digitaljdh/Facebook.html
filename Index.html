@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fakebook - Login or Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Fakebook</h1>
+  </header>
+
+  <main class="main">
+    <section class="login-box">
+      <h2>Login</h2>
+      <form onsubmit="return validateLoginForm()">
+        <input type="text" id="loginEmail" placeholder="Email or Phone" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <input type="submit" value="Log In">
+      </form>
+    </section>
+
+    <section class="signup-box">
+      <h2>Sign Up</h2>
+      <form onsubmit="return validateSignupForm()">
+        <input type="text" id="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" placeholder="Last Name" required>
+        <input type="email" id="signupEmail" placeholder="Email" required>
+        <input type="password" id="signupPassword" placeholder="New Password" required>
+        <input type="submit" value="Sign Up">
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    College Project Only – Fakebook is not a real site.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
